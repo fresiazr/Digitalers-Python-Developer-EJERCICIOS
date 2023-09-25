@@ -7,14 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 15px;
-    background-image:url(/img/background.jpg);
+    background-image:url(/universidad-gestion/img/background.jpg);
     display: flex;
     justify-content: center;
 }
 
 .contenedor {
     margin: 0;
-    background-image: url(/img/background2.jpg);
+    background-image: url(/universidad-gestion/img/background2.jpg);
     width: 600px;
 }
 
