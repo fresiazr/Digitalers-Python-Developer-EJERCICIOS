@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    background-image:url(/img/background.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    margin: 0;
+    background-image: url(/img/background2.jpg);
+    width: 600px;
+}
+
+h1 {
+    color: rgb(175, 16, 16);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+    font-weight: 550;
+    font-size: 18px;
+    background-color: rgb(64, 105, 240);
+    padding-left: 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #dadada;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h3 {
+    color: rgb(230, 84, 26);
+    font-weight: 400;
+    font-size: 16;
+}
+
+input, label, optgroup {
+    display: block;
+}
+
+label {
+    color: rgb(230, 84, 26);
+    font-weight: 700;
+    font-size: 16;
+}
+
+.aterisco {
+    color: rgb(211, 21, 21);
+}
+
+input, select {
+    font-weight: 400;
+    font-size: 14px;
+    width: 555px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #c5c3c3;
+    border-radius: 5px;
+}
+
+form {
+    margin-left: 13px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#formulario {
+    border-bottom: 1px solid #a8a8a8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#botonGuardar {
+    font-weight: 400;
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgb(64, 105, 240);
+    border: 0.5px solid #dadada;
+    border-radius: 5px;
+}
+
+#registro {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #2e2e2e;
+    height: 250px;
+}
+
