@@ -1,6 +1,6 @@
-# EJI-Universidad
+# universidad-etapa1
 
-Ejercicio Integrador - Gestión de la Universidad
+Ejercicio Integrador - Gestión de la Universidad (ETAPA 1)
 
 Crear una página de Gestión de una Universidad con las siguientes características:
 
