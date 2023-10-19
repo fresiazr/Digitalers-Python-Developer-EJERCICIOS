@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="css/estilos.css">
+    <title>Gestión de la Universidad</title> 
+</head>
+
+<body>
+    <div class="contenedor">
+    <!--HEADER-->
+    <header>
+        <img src="img/eu_banner.png" alt="Banner">
+        <h1 class="h1">Gestión de la Universidad</h1>
+    </header>
+    
+    <main> 
+    <!--FORMULARIO-->
+        <section id="formulario">
+          <h2> Ingresar Alumno </h2>
+          <form action="cgi-bin/handledb.py" method="post">
+
+            <label for="nombre">Nombre y Apellido: <div class="aterisco" style="display: inline;">*</div></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Juan García" required>
+          
+            <label for="edad">Edad: <div class="aterisco" style="display: inline;">*</div></label>
+            <input type="number" name="edad" id="nombre" min="1" max="100" placeholder="18" required>
+          
+            <label for="materia">Materia: <div class="aterisco" style="display: inline;">*</div></label>
+            <select name="materia" id="materia">
+                <optgroup label="Licenciatura en Informática">
+                    <option value="prog_logica">Programación Lógica</option>
+                    <option value="algebra">Álgebra</option>
+                    <option value="oop">Programación Orientada a Objetos</option>
+                </optgroup>
+
+                <optgroup label="Licenciatura en Economía">
+                    <option value="admin_1">Administración I</option>
+                    <option value="contabilidad">Contabilidad</option>
+                    <option value="princ_econ">Principios de Economía</option>
+                </optgroup>
+
+                <optgroup label="Abogacía">
+                    <option value="intro_derecho">Introducción al Derecho</option>
+                    <option value="teoría_persona">Teoría de la Persona</option>
+                    <option value="derec_penal">Derecho Penal I</option>
+                </optgroup>
+            </select>
+              
+            <input type="submit"  name="insertar" value="Guardar" class="botones">
+            <button class="botones" type="reset">Cancelar</button>
+           </form>
+       </section>
+
+    <!--REGISTRO-->
+     <h1 class="h1">Control de Registro</h1>
+     
+     <div class="registro-est" id="registro-est"></div>
+
+     <script>
+        var xhr = new XMLHttpRequest(); 
+        xhr.open("GET", "cgi-bin/handledb.py", true); 
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById("registro-est").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+     </script>
+
+   </main>
+</div>
+</body>
+</html>

@@ -7,14 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 15px;
-    background-image:url(/universidad-etapa1/img/background.jpg);
+    background-image:url(../img/background.jpg);
     display: flex;
     justify-content: center;
 }
 
 .contenedor {
     margin: 0;
-    background-image: url(/universidad-etapa1/img/background2.jpg);
+    background-image: url(../img/background2.jpg);
     width: 600px;
 }
 
@@ -82,7 +82,7 @@ form {
     border-bottom-right-radius: 5px;
 }
 
-#botonGuardar {
+.botones {
     font-weight: 400;
     font-size: 14px;
     width: 100px;
@@ -93,12 +93,32 @@ form {
     background-color: rgb(64, 105, 240);
     border: 0.5px solid #dadada;
     border-radius: 5px;
+    display: inline;
 }
 
-#registro {
+.registro-est {
+    border: 1px solid #2e2e2e;
+}
+
+.registro-est table {
     display: flex;
     justify-content: space-around;
-    border: 1px solid #2e2e2e;
-    height: 250px;
+    padding: 15px;
+    margin: 15px;
 }
 
+th {
+    color: rgb(230, 84, 26);
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 19px;
+}
+
+td {
+    color: rgb(230, 84, 26);
+    text-align: center;
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 17px;
+}
