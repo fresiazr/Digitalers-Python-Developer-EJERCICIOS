@@ -1,4 +1,4 @@
-# universidad-etapa-1
+# Universidad-Etapa1
 
 Ejercicio Integrador - Gestión de la Universidad (ETAPA 1)
 
