@@ -1,5 +1,18 @@
 #!C:\Users\User\AppData\Local\Programs\Python\Python311\python.exe
 
+# Copiar la carpeta del proyecto a xampp\htdocs.
+
+# Modificar Apache Config (primera opción) y agregar:
+# ScriptAlias /cgi-bin/ “C:/xampp/htdocs/<path_html>/cgi-bin/”
+# <Directory “C:/xampp/htdocs/<path_html>/cgi-bin/”>
+#    Options +ExecCGI
+#    AddHandler cgi-script .cgi .py
+# </Directory>
+
+# En el navegador abrir http://localhost/<path>/index.html
+
+#########################################
+
 import sqlite3
 
 import cgi

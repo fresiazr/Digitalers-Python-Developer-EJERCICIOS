@@ -1,4 +1,0 @@
-Ejercicio Integrador - Gestión de la Universidad (ETAPA 2)
-
-- Cgi, Sqlite3, y XAMPP.
-- Base de datos y tabla.
