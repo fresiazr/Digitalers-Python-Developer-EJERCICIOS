@@ -1,15 +1,21 @@
 {% extends "appuni/layout.html" %}
 
+{% block title %}
+Actualizar Alumno
+{% endblock %}
+
 {% block content %}
 <div class="contenedor">
+<div class="formulario">
     <!--ACTUALIZAR ALUMNO-->
-<h1>Actualizar Alumno</h1>
+<h1 class="titulo">Actualizar Alumno</h1>
 
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Actualizar Alumno">
+    <input type="submit" value="Actualizar Alumno" class="boton">
     <a href="{% url 'index' %}"><button>Volver</button></a>
 </form>
+</div>
 </div>
 {% endblock %}

@@ -1,4 +1,5 @@
 {% extends "appuni/layout.html" %}
+{% load static %}
 
 {% block title %}
 Gestión de la Universidad
@@ -7,7 +8,7 @@ Gestión de la Universidad
 {% block content %}
 <div class="contenedor">
     <!--HEADER-->
-        <img src='{% static "uniapp/banner.png" %}'>
+        <img src="{% static 'appuni/banner.png' %}">
         <h1 class="h1">Gestión de la Universidad</h1>
 
     <!--FORMULARIO-->
@@ -27,12 +28,12 @@ Gestión de la Universidad
             </tr>
         </thead>
         
-        {% for curso in cursos %}
+        {% for alunmo in alumnos %}
         <tr>
-            <td><a href="{% url 'alumno' alumno.nombre %}">{{ alumno.id }}</a></td>
+            <td><a href="{% url 'alumno' alumno.id %}">{{ alumno.id }}</a></td>
             <td>{{ alumno.nombre }}</td>
-            <td>{{ alumno.inscripciones }}</td>
-            <td>{{ alumno.turno }}</td>
+            <td>{{ alumno.edad }}</td>
+            <td>{{ alumno.materia }}</td>
         </tr>
         {% endfor %}
     </table>

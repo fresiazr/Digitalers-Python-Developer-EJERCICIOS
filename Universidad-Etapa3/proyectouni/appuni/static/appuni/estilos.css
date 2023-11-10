@@ -45,27 +45,43 @@ h3 {
     font-size: 16;
 }
 
+.titulo {
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #2e2e2e;
+}
+
 .tabla {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     margin: 10px;
-    border: 1px solid #2e2e2e;
+    border: 0.5px solid #2e2e2e;
+    border-radius: 2px;
 }
 
-button, input {
-    font-weight: 400;
-    font-size: 14px;
-    width: 100px;
-    height: 35px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+.boton, button {
+    cursor: pointer;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
     color: white;
     background-color: rgb(64, 105, 240);
     border: 0.5px solid #dadada;
     border-radius: 5px;
-    display: inline;
+    text-decoration: none;
+    transition-duration: 0.5s;
 }
+
+.formulario {
+    margin: 10px;
+    padding: 10px;
+}
+
+.boton:hover, button:hover {
+    background-color: rgb(29, 46, 104);
+    color: white;
+  }
 
 th {
     color: rgb(230, 84, 26);

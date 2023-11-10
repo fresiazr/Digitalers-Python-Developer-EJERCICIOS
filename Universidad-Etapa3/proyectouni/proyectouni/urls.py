@@ -1,5 +1,5 @@
 from django.urls import path, include
 
 urlpatterns = [
-    path('appuni/', include("appuni.urls")),
+    path('', include("appuni.urls")),
 ]
