@@ -1,0 +1,15 @@
+{% extends "appuni/layout.html" %}
+
+{% block content %}
+<div class="contenedor">
+    <!--ALUMNO-->
+<h3>Id del Alumno: {{ alumno.id }}</h3>
+<h3>Nombre y Apellido: {{ alumno.nombre }}</h3>
+<h3>Edad: {{ alumno.edad }}</h3>
+<h3>Materia: {{ alumno.materia }}</h3>
+
+<a href="{% url 'index %}"><button>Volver</button></a>
+<a href="{% url 'actualizar_alumno' alumno.id %}"><button>Actualizar</button></a>
+<a href="{% url 'eliminar_alumno' alumno.id %}"><button>Eliminar</button></a>
+</div>
+{% endblock %}

@@ -7,14 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 15px;
-    background-image:url(../appuni/background.jpg);
+    background-image:url(background.jpg);
     display: flex;
     justify-content: center;
 }
 
 .contenedor {
     margin: 0;
-    background-image: url(../appuni/background2.jpg);
+    background-image: url(background2.jpg);
     width: 600px;
 }
 
@@ -45,46 +45,15 @@ h3 {
     font-size: 16;
 }
 
-/*input, label, optgroup {
-    display: block;
+.tabla {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #2e2e2e;
 }
 
-label {
-    color: rgb(230, 84, 26);
-    font-weight: 700;
-    font-size: 16;
-}
-
-.aterisco {
-    color: rgb(211, 21, 21);
-}
-
-input, select {
-    font-weight: 400;
-    font-size: 14px;
-    width: 555px;
-    height: 35px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #c5c3c3;
-    border-radius: 5px;
-}
-
-form {
-    margin-left: 13px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-}
-*/
-
-#formulario {
-    border-bottom: 1px solid #a8a8a8;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-/*
-.botones {
+button, input {
     font-weight: 400;
     font-size: 14px;
     width: 100px;
@@ -97,18 +66,6 @@ form {
     border-radius: 5px;
     display: inline;
 }
-
-.registro-est {
-    border: 1px solid #2e2e2e;
-}
-
-.registro-est table {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    margin: 15px;
-}
-*/
 
 th {
     color: rgb(230, 84, 26);

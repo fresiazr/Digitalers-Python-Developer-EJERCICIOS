@@ -1,7 +1,8 @@
 {% extends "appuni/layout.html" %}
-{% load static %}
 
-{% block title %} Gestión de la Universidad {% endblock %}
+{% block title %}
+Gestión de la Universidad
+{% endblock %}
 
 {% block content %}
 <div class="contenedor">
@@ -16,5 +17,27 @@
 
     <!--REGISTRO-->
      <h1 class="h1">Control de Registro</h1>
-</div>
+     <table class="tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre y Apellido</th>
+                <th>Edad</th>
+                <th>Materia</th>
+            </tr>
+        </thead>
+        
+        {% for curso in cursos %}
+        <tr>
+            <td><a href="{% url 'alumno' alumno.nombre %}">{{ alumno.id }}</a></td>
+            <td>{{ alumno.nombre }}</td>
+            <td>{{ alumno.inscripciones }}</td>
+            <td>{{ alumno.turno }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <br>
+    <a href='{% url "nuevo_alumno" %}'><button>Nuevo Alumno</button></a>
+    </div>
 {% endblock %}
