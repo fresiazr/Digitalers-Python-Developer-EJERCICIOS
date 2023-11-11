@@ -9,7 +9,7 @@ Gestión de la Universidad
 <div class="contenedor">
     <!--HEADER-->
         <img src="{% static 'appuni/banner.png' %}">
-        <h1 class="h1">Gestión de la Universidad</h1>
+        <h1>Gestión de la Universidad</h1>
 
     <!--FORMULARIO-->
         <section id="formulario">
@@ -17,28 +17,31 @@ Gestión de la Universidad
        </section>
 
     <!--REGISTRO-->
-     <h1 class="h1">Control de Registro</h1>
+     <h1>Control de Registro</h1>
+     <div class="t">
      <table class="tabla">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nombre y Apellido</th>
+                <th>Nombre</th>
                 <th>Edad</th>
                 <th>Materia</th>
             </tr>
         </thead>
         
-        {% for alunmo in alumnos %}
+        {% for alumno in alumnos %}
         <tr>
-            <td><a href="{% url 'alumno' alumno.id %}">{{ alumno.id }}</a></td>
+            <td><a href='{% url "alumno" alumno.id %}'>{{ alumno.id }}</a></td>
             <td>{{ alumno.nombre }}</td>
             <td>{{ alumno.edad }}</td>
             <td>{{ alumno.materia }}</td>
         </tr>
         {% endfor %}
     </table>
-    
-    <br>
+    </div>
+
+    <div class="botones">
     <a href='{% url "nuevo_alumno" %}'><button>Nuevo Alumno</button></a>
+    </div>
     </div>
 {% endblock %}

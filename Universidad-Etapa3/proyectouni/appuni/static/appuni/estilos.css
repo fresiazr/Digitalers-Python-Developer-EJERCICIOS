@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*--------> BODY <--------*/
 * {
     box-sizing: border-box;
 }
@@ -12,12 +13,56 @@ body {
     justify-content: center;
 }
 
+/*--------> CONTENEDORES <--------*/
 .contenedor {
     margin: 0;
     background-image: url(background2.jpg);
     width: 600px;
 }
 
+.formulario {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.t {
+    display: flex;
+    justify-content: center;
+}
+
+/*--------> TABLA Y RECUADROS <--------*/
+.info {
+    margin: 10px 5px;
+    padding: 10px 5px;
+    border: 0.5px solid rgb(175, 16, 16);
+    border-radius: 2px;
+}
+
+.tabla {
+    width: 595px;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    border: 0.5px solid rgb(175, 16, 16);
+    border-radius: 2px;
+}
+
+th {
+    color: rgb(230, 84, 26);
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 19px;
+}
+
+td {
+    color: rgb(230, 84, 26);
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    font-size: 17px;
+}
+
+/*--------> TÍTULOS <--------*/
 h1 {
     color: rgb(175, 16, 16);
     font-size: 25px;
@@ -42,40 +87,48 @@ h2 {
 h3 {
     color: rgb(230, 84, 26);
     font-weight: 400;
-    font-size: 16;
+    font-size: 14;
+    padding-left: 15px;
 }
 
-.titulo {
-    padding-bottom: 15px;
-    border-bottom: 0.5px solid #2e2e2e;
+label {
+    color: rgb(230, 84, 26);
+    font-weight: 700;
+    padding: 20px 10px;
 }
 
-.tabla {
+/*--------> BOTONES E INPUTS <--------*/
+.botones {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    margin: 10px;
-    border: 0.5px solid #2e2e2e;
-    border-radius: 2px;
 }
 
 .boton, button {
     cursor: pointer;
-    font-weight: 700;
     width: 150px;
     height: 40px;
-    margin: 10px;
+    margin: 5px 0 15px;
     color: white;
+    font-weight: 700;
+    text-decoration: none;
     background-color: rgb(64, 105, 240);
     border: 0.5px solid #dadada;
     border-radius: 5px;
-    text-decoration: none;
     transition-duration: 0.5s;
 }
 
-.formulario {
-    margin: 10px;
-    padding: 10px;
+.boton2 {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin: 5px 0;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    background-color:  rgb(64, 105, 240);
+    border: 0.5px solid #dadada;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
 
 .boton:hover, button:hover {
@@ -83,18 +136,29 @@ h3 {
     color: white;
   }
 
-th {
-    color: rgb(230, 84, 26);
-    text-align: center;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 19px;
+.boton2:hover {
+    background-color: rgb(29, 46, 104);
+    color: white;
 }
 
-td {
+input#id_nombre, select#id_materia {
+    width: 400px;
+    height: 30px;
+}
+
+input#id_edad {
+    width: 100px;
+    height: 30px;
+}
+
+/*--------> A Y HOVER <--------*/
+a {
     color: rgb(230, 84, 26);
-    text-align: center;
-    padding: 10px;
-    margin: 10px 5px;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 14;
+    text-decoration:underline;
+}
+
+a:hover {
+    color: rgb(64, 105, 240);
 }

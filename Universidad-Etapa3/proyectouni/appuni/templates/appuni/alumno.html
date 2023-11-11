@@ -8,16 +8,20 @@ Información del Alumno
 <div class="contenedor">
 <div class="formulario">
     <!--ALUMNO-->
-<h1 class="titulo">Información del Alumno</h1>
+<h1>Información del Alumno</h1>
 
-<h3>Id del Alumno: {{ alumno.id }}</h3>
-<h3>Nombre y Apellido: {{ alumno.nombre }}</h3>
-<h3>Edad: {{ alumno.edad }}</h3>
-<h3>Materia: {{ alumno.materia }}</h3>
+<div class="info">
+<h3><strong>➡️ ID:</strong> {{ alumno.id }}</h3>
+<h3><strong>➡️ Nombre y Apellido:</strong> {{ alumno.nombre }}</h3>
+<h3><strong>➡️ Edad:</strong> {{ alumno.edad }}</h3>
+<h3><strong>➡️ Materia:</strong> {{ alumno.materia }}</h3>
+</div>
 
+<div class="botones">
 <a href="{% url 'index' %}"><button>Volver</button></a>
 <a href="{% url 'actualizar_alumno' alumno.id %}"><button>Actualizar</button></a>
 <a href="{% url 'eliminar_alumno' alumno.id %}"><button>Eliminar</button></a>
+</div>
 </div>
 </div>
 {% endblock %}

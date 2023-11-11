@@ -10,12 +10,19 @@ Actualizar Alumno
     <!--ACTUALIZAR ALUMNO-->
 <h1 class="titulo">Actualizar Alumno</h1>
 
+<div class="info">
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Actualizar Alumno" class="boton">
-    <a href="{% url 'index' %}"><button>Volver</button></a>
+    <div class="botones">
+    <input type="submit" value="Actualizar Alumno" class="boton2">
+    </div>
 </form>
+</div>
+
+<div class="botones">
+<a href="{% url 'index' %}"><button>Volver</button></a>
+</div>
 </div>
 </div>
 {% endblock %}

@@ -9,9 +9,9 @@ def index(request):
     ctx = {"alumnos": alumnos}
     return render(request, 'appuni/index.html', ctx)
 
-def alumno(request, nombre_alumno):
+def alumno(request, pk):
     try:
-        alumno = Alumno.objects.get(nombre=nombre_alumno)
+        alumno = Alumno.objects.get(id=pk)
     except Alumno.DoesNotExist:
         raise Http404    
     ctx = {"alumno": alumno}
@@ -42,6 +42,6 @@ def actualizar_alumno(request, pk):
 
 
 def eliminar_alumno(request, pk):
-    eliminar_alumno = Alumno.objects.get(id=pk)
-    eliminar_alumno.delete()
+    alumno = Alumno.objects.get(id=pk)
+    alumno.delete()
     return HttpResponseRedirect(reverse("index"))
